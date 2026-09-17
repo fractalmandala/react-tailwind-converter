@@ -1,5 +1,5 @@
 {
-  "name": "react-tailwind-converter",
+  "name": "@fractaldesign/react-tailwind-converter",
   "version": "0.1.0",
   "description": "AST-based CLIs: Tailwind classes → indented Sass (real Tailwind v4 engine), and React (TSX/JSX) → Svelte 5 (Babel).",
   "type": "module",
@@ -8,6 +8,10 @@
   "bin": {
     "tw2sass": "dist/tw2sass.js",
     "react2svelte": "dist/react2svelte.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fractalmandala/react-tailwind-converter"
   },
   "files": [
     "dist",

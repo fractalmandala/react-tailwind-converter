@@ -1,5 +1,7 @@
 # react-tailwind-converter
 
+[NPM](https://www.npmjs.com/package/@fractaldesign/react-tailwind-converter)
+
 Two **AST-based** command-line converters (no regex string-munging):
 
 - **`tw2sass`** — Tailwind utility classes → **indented Sass**, using the *real
