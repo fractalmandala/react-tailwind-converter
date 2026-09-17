@@ -1,0 +1,64 @@
+{
+  "name": "react-tailwind-converter",
+  "version": "0.1.0",
+  "description": "AST-based CLIs: Tailwind classes → indented Sass (real Tailwind v4 engine), and React (TSX/JSX) → Svelte 5 (Babel).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Amritanshu",
+  "bin": {
+    "tw2sass": "dist/tw2sass.js",
+    "react2svelte": "dist/react2svelte.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "TW2SASS.md",
+    "REACT2SVELTE.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "tw2sass": "tsx bin/tw2sass.ts",
+    "react2svelte": "tsx bin/react2svelte.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "sass",
+    "scss",
+    "react",
+    "svelte",
+    "svelte5",
+    "converter",
+    "codemod",
+    "cli",
+    "ast"
+  ],
+  "dependencies": {
+    "@babel/generator": "^8.0.5",
+    "@babel/parser": "^8.0.5",
+    "@babel/traverse": "^8.0.5",
+    "@babel/types": "^8.0.5",
+    "node-html-parser": "^9.0.4",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/node": "^22.20.3",
+    "tsup": "^8.0.0",
+    "tsx": "^4.23.13",
+    "typescript": "^5.0.0"
+  }
+}
